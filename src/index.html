@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饿了么</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+</head>
+<body>
+    <div class=" text-white text-[1.5rem] p-2 bg-sky-500" id="location">
+        <i class="i material-symbols:pin-drop-rounded"></i>
+        沈阳市规划大厦
+    </div>
+    <div class="p-2 bg-sky-500 sticky top-0" id="search">
+        <div class="bg-white bg-sky-500 text-gray-500 p-2 rounded text-center">
+            搜索商家名、商品名
+        </div>
+    </div>
+
+
+        <ul class=" flex flex-wrap text-gray-500 text-center text-xs leading- p-4 gap-x-5 ">
+            <li class="w-14 block" onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl01.png">
+                <p>美食</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl02.png">
+                <p>早餐</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl03.png">
+                <p>跑腿代购</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl04.png">
+                <p>汉堡披萨</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl05.png">
+                <p>甜品饮品</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl06.png">
+                <p>速食简餐</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl07.png">
+                <p>地方小吃</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl08.png">
+                <p>米粉面馆</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl09.png">
+                <p>包子粥铺</p>
+            </li>
+            <li class="w-14 block " onclick="location.href='businessList.html'">
+                <img src="assets/img/dcfl10.png">
+                <p>炸鸡炸串</p>
+            </li>
+        </ul>
+
+        <!-- 横幅广告部分 -->
+        <div class="p-4 m-2 h-28 rounded bg-cover bg-[url('../elm-demo/src/assets/img/index_banner.png')]">
+            <h3 class="text-xl font-bold">品质套餐</h3>
+            <p class="mt-1 text-gray-500">搭配齐全吃得好</p>
+            <a class="text-xs font-bold mt-2 text-yellow-700">立即抢购 &gt;</a>
+        </div>
+
+        <!-- 超级会员部分 -->
+        <div class="m-2 flex bg-[#FEEDC1] items-center rounded">
+            <div class="flex flex-grow items-center">
+                <img src="assets/img/super_member.png" class="p-2">
+                <h3 class="font-bold text-x">超级会员</h3>
+                <p>&#8226; 每月享超值权益</p>
+            </div>
+            <div class="mr-2 text-yellow-700">
+                立即开通 &gt;
+            </div>
+        </div>
+
+        <!-- 推荐商家部分 -->
+        <div class="flex items-center justify-center py-3">
+            <div class="h-0.5 w-6 bg-gray-600 mr-2"></div>
+            <p class="text-xl">推荐商家</p>
+            <div class="h-0.5 w-6 bg-gray-600 ml-2"></div>
+        </div>
+
+        <!-- 推荐方式部分 -->
+        <ul class="flex m-2 justify-center text-center pb-6 text-gray-500">
+            <li class="w-24">综合排序</li>
+            <li class="w-24">距离最近</li>
+            <li class="w-24">销量最高</li>
+            <li class="w-24">筛选</li>
+        </ul>
+
+        <!-- 推荐商家列表部分 -->
+        <ul class="mr-2 ml-2">
+            <li class="flex flex-row mt-2 pb-4 border-b">
+                <img class="h-1/5 w-1/5 mt-0 ml-0 m-4 " src="assets/img/sj01.png">
+                <div class="w-4/5">
+                    <div class="font-bold text-x flex mb-1">
+                        <h3 class="flex-grow">万家饺子（软件园E18店）</h3>
+                        <div class="text-white  bg-gray-600">&#8226;</div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-grow">
+                            <i class="text-yellow-400 p-0 m-0 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <p >4.9&nbsp;&nbsp;&nbsp;&nbsp;月售345单</p>
+                        </div>
+                        <div class="bg-blue-500 text-white pl-0.5 pr-0.5 rounded">
+                            蜂鸟专送
+                        </div>
+                    </div>
+                    <div class="flex text-gray-600">
+                        <p class="flex flex-grow">&#165;15起送 | &#165;3配送</p>
+                        <p>3.22km | 30分钟</p>
+                    </div>
+                    <div class="border-2 inline-block w-auto rounded text-gray-600">
+                        各种饺子
+                    </div>
+                    <div class="flex justify-between text-gray-600  mt-2 text-sm">
+                        <div class="flex">
+                            <div class="mr-2 w-5 rounded text-center bg-green-600 text-white ">新</div>
+                            <p>饿了么新用户首单立减9元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2个活动</p>
+                        </div>
+
+                    </div>
+                    <div class="mt-2 text-gray-600 text-sm">
+                        <div class="flex">
+                            <div class="mr-2 w-5 rounded text-center bg-amber-500 text-white">特</div>
+                            <p>特价商品5元起</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="flex flex-row mt-2 pb-4 border-b">
+                    <img class="h-1/5 w-1/5 mt-0 ml-0 m-4 " src="assets/img/sj02.png">
+                    <div class="w-4/5">
+                        <div class="font-bold text-x flex mb-1">
+                        <h3 class="flex-grow">小锅饭豆腐馆（全运店）</h3>
+                        <div class="text-white  bg-gray-600">&#8226;</div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-grow">
+                            <i class="text-yellow-400 p-0 m-0 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <p>4.9&nbsp;&nbsp;&nbsp;&nbsp;月售345单</p>
+                        </div>
+                        <div class="bg-blue-500 text-white pl-0.5 pr-0.5 rounded">
+                            蜂鸟专送
+                        </div>
+                    </div>
+                        <div class="flex text-gray-600">
+                            <p class="flex flex-grow">&#165;15起送 | &#165;3配送</p>
+                            <p>4.22km | 40分钟</p>
+                        </div>
+                        <div class="border-2 inline-block w-auto rounded text-gray-600">
+                            各种豆腐
+                        </div>
+                        <div class="flex justify-between text-gray-600  mt-2 text-sm">
+                            <div class="flex">
+                                <div class="mr-2 w-5 rounded text-center bg-green-600 text-white ">新</div>
+                                <p>饿了么新用户首单立减9元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2个活动</p>
+                            </div>
+
+                        </div>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <div class="flex">
+                                <div class="mr-2 w-5 rounded text-center bg-amber-500 text-white">特</div>
+                                <p>特价商品5元起</p>
+                            </div>
+                        </div>
+                    </div>
+            </li>
+
+
+                <li class="flex flex-row mt-2 pb-4 border-b">
+                        <img class="h-1/5 w-1/5 mt-0 ml-0 m-4 " src="assets/img/sj03.png">
+                        <div class="w-4/5">
+                            <div class="font-bold text-x flex mb-1">
+                        <h3 class="flex-grow">麦当劳麦乐送（全运路店）</h3>
+                        <div class="text-white  bg-gray-600">&#8226;</div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-grow">
+                            <i class="text-yellow-400 p-0 m-0 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <p>4.9&nbsp;&nbsp;&nbsp;&nbsp;月售345单</p>
+                        </div>
+                        <div class="bg-blue-500 pl-0.5 pr-0.5 rounded text-white ">
+                            蜂鸟专送
+                        </div>
+                    </div>
+                            <div class="flex text-gray-600">
+                                <p class="flex flex-grow">&#165;15起送 | &#165;3配送</p>
+                                <p>1.22km | 15分钟</p>
+                            </div>
+                            <div class="border-2 inline-block w-auto rounded text-gray-600">
+                                各种快餐
+                            </div>
+                            <div class="flex justify-between text-gray-600  mt-2 text-sm">
+                                <div class="flex">
+                                    <div class="mr-2 w-5 rounded text-center bg-green-600 text-white ">新</div>
+                                    <p>饿了么新用户首单立减9元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2个活动</p>
+                                </div>
+
+                            </div>
+                            <div class="mt-2 text-gray-600 text-sm">
+                                <div class="flex">
+                                    <div class="mr-2 w-5 rounded text-center bg-amber-500 text-white">特</div>
+                                    <p>特价商品5元起</p>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+
+                    <li class="flex flex-row mt-2 pb-4 border-b">
+                            <img class="h-1/5 w-1/5 mt-0 ml-0 m-4 " src="assets/img/sj04.png">
+                            <div class="w-4/5">
+                                <div class="font-bold text-x flex mb-1">
+                        <h3 class="flex-grow">米村拌饭（浑南店）</h3>
+                        <div class="text-white  bg-gray-600">&#8226;</div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-grow">
+                            <i class="text-yellow-400 p-0 m-0 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <p>4.9&nbsp;&nbsp;&nbsp;&nbsp;月售345单</p>
+                        </div>
+                        <div class="bg-blue-500 text-white pl-0.5 pr-0.5 rounded">
+                            蜂鸟专送
+                        </div>
+                    </div>
+                                <div class="flex text-gray-600">
+                                    <p class="flex flex-grow">&#165;15起送 | &#165;3配送</p>
+                                    <p>3.62km | 30分钟</p>
+                                </div>
+                                <div class="border-2 inline-block w-auto rounded text-gray-600">
+                                    各种拌饭
+                                </div>
+                                <div class="flex justify-between text-gray-600  mt-2 text-sm">
+                                    <div class="flex">
+                                        <div class="mr-2 w-5 rounded text-center bg-green-600 text-white ">新</div>
+                                        <p>饿了么新用户首单立减9元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2个活动</p>
+                                    </div>
+
+                                </div>
+                                <div class="mt-2 text-gray-600 text-sm">
+                                    <div class="flex">
+                                        <div class="mr-2 w-5 rounded text-center bg-amber-500 text-white">特</div>
+                                        <p>特价商品5元起</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+
+                    <li class="flex flex-row mt-2 pb-4 border-b">
+                                <img class="h-1/5 w-1/5 mt-0 ml-0 m-4 " src="assets/img/sj05.png">
+                                <div class="w-4/5">
+                                    <div class="font-bold text-x flex mb-1">
+                        <h3 class="flex-grow">申记串道（中海康城店）</h3>
+                        <div class="text-white  bg-gray-600">&#8226;</div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-grow">
+                            <i class="text-yellow-400 p-0 m-0 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <i class="text-yellow-400 i material-symbols:star-rounded"></i>
+                            <p>4.9&nbsp;&nbsp;&nbsp;&nbsp;月售345单</p>
+                        </div>
+                        <div class="bg-blue-500 text-white pl-0.5 pr-0.5 rounded">
+                            蜂鸟专送
+                        </div>
+                    </div>
+                                    <div class="flex text-gray-600">
+                                        <p class="flex flex-grow">&#165;15起送 | &#165;3配送</p>
+                                        <p>2.87km | 30分钟</p>
+                                    </div>
+                                    <div class="border-2 inline-block w-auto rounded text-gray-600">
+                                        各种串串
+                                    </div>
+                                    <div class="flex justify-between text-gray-600  mt-2 text-sm">
+                                        <div class="flex">
+                                            <div class="mr-2 w-5 rounded text-center bg-green-600 text-white ">新</div>
+                                            <p>饿了么新用户首单立减9元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2个活动</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="mt-2 text-gray-600 text-sm">
+                                        <div class="flex">
+                                            <div class="mr-2 w-5 rounded text-center bg-amber-500 text-white">特</div>
+                                            <p>特价商品5元起</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    </li>
+                     <li class="flex flex-row mt-10 pb-4 ">
+
+                    </li>
+        </ul>
+
+    <!--        页脚导航栏-->
+    <footer class="fixed bottom-0 w-full h-16 border-t border-t-gray-400 text-gray-600 bg-gray-100  flex justify-around items-center">
+        <div class="text-center leading-none" onclick="location.href='index.html'">
+            <i class="i ph:house-fill text-2xl"></i>
+            <div>首页</div>
+        </div>
+        <div class="text-center leading-none">
+            <i class="i bx:bxs-compass text-2xl"></i>
+            <div>发现</div>
+        </div>
+        <div class="text-center leading-none" onclick="location.href='orderList.html'">
+            <i class="i mdi:document text-2xl"></i>
+            <div>订单</div>
+        </div>
+        <div class="text-center leading-none" onclick="location.href='login.html'">
+            <i class="i ic:sharp-person text-2xl"></i>
+            <div>我的</div>
+        </div>
+    </footer>
+
+</body>
+</html>

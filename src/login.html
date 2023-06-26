@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饿了么</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+</head>
+<body>
+<section class="h-full flex flex-col">
+    <header class="fixed flex justify-center  bg-sky-500 text-white text-xl h-12 w-full  items-center top-0">用户登录</header>
+
+    <main class="flex-grow overflow-auto">
+
+        <!-- 表单部分 -->
+        <ul class="m-4 mt-20 mb-10">
+            <li class="flex mt-2 border-b pb-4 border-gray-600">
+                <div class="font-bold text-x w-[250px]">
+                    手机号码：
+                </div>
+                <div class="ml-2">
+                    <input type="text" placeholder="手机号码" class="h-full outline-0">
+                </div>
+            </li>
+            <li class="flex mt-2 border-b pb-4 border-gray-600">
+                <div class="font-bold text-x w-[250px]">
+                    密码：
+                </div>
+                <div class="ml-2">
+                    <input type="text" placeholder="密码" class="h-full outline-0">
+                </div>
+            </li>
+        </ul>
+
+        <!--    按钮-->
+        <div class="m-4">
+                <button class="bg-green-500 rounded text-white text-x text-center w-full h-10 font-bold">登陆</button>
+                <button onclick="location.href='register.html'" class="bg-gray-300 text-x text-gray-600 rounded w-full mt-4 h-10 font-bold">去注册</button>
+        </div>
+    </main>
+
+
+    <!--        页脚导航栏-->
+    <footer class="fixed bottom-0 w-full h-16 border-t border-t-gray-400 text-gray-600 bg-gray-100  flex justify-around items-center">
+        <div class="text-center leading-none" onclick="location.href='index.html'">
+            <i class="i ph:house-fill text-2xl"></i>
+            <div>首页</div>
+        </div>
+        <div class="text-center leading-none">
+            <i class="i bx:bxs-compass text-2xl"></i>
+            <div>发现</div>
+        </div>
+        <div class="text-center leading-none" onclick="location.href='orderList.html'">
+            <i class="i mdi:document text-2xl"></i>
+            <div>订单</div>
+        </div>
+        <div class="text-center leading-none" onclick="location.href='login.html'">
+            <i class="i ic:sharp-person text-2xl"></i>
+            <div>我的</div>
+        </div>
+    </footer>
+</section>
+
+
+</body>
+</html>

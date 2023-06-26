@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+    /*字体大小占窗口宽度的4%*/
+    font-size: 4vw;
+}
+
+body {
+    height: 100%;
+}

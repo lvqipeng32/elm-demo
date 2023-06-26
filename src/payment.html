@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饿了么</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconfont/iconfont.css">
+</head>
+<body>
+<header class="fixed flex justify-center  bg-sky-500 text-white text-x h-12 w-full  items-center top-0 border-b pb-4 border-gray-600">在线支付</header>
+
+<main class="m-4 pt-10">
+    <h2 class="text-x text-gray-400">订单信息:</h2>
+    <div class="text-x flex justify-between mt-4">
+        <div class="flex">
+            <h3>万家饺子（软件园E18店）</h3>
+            <button class="text-xs" onclick="toggleElementDisplay('div1', this)">▼</button>
+        </div>
+        <p class="text-red-500">&#165;49</p>
+    </div>
+
+    <ul id="div1" class="ml-2 mt-2 text-xs max-h-0 overflow-hidden transition-all duration-500">
+        <li class="flex justify-between mt-2">
+            <p>纯肉鲜肉（水饺） x 2</p>
+            <p>&#165;15</p>
+        </li>
+        <li class="flex justify-between mt-2">
+            <p>玉米鲜肉（水饺） x 1</p>
+            <p>&#165;16</p>
+        </li>
+        <li class="flex justify-between mt-2">
+            <p>配送费</p>
+            <p>&#165;3</p>
+        </li>
+    </ul>
+<!--    支付部分-->
+
+    <div class=" mt-4 ">
+        <label class="flex items-center justify-between">
+            <img src="assets/img/alipay.png" class="w-[300px] h-[100px]">
+            <input type="radio" name="paymentMethod" value="alipay" class="form-radio text-blue-500 w-4 h-4">
+        </label>
+    </div>
+
+    <div class="mt-4">
+        <label class="flex items-center justify-between">
+            <img src="assets/img/wechat.png" class="w-[300px] h-[100px]">
+            <div>
+            <input type="radio" name="paymentMethod" value="wechat" checked class="form-radio text-blue-500 w-4 h-4">
+            </div>
+        </label>
+    </div>
+
+
+
+    <button class="mt-8 bg-green-500 rounded text-white text-xl text-center w-full h-10">确认支付</button>
+</main>
+
+<!--        页脚导航栏-->
+<footer class="fixed bottom-0 w-full h-16 border-t border-t-gray-400 text-gray-600 bg-gray-100  flex justify-around items-center">
+    <div class="text-center leading-none" onclick="location.href='index.html'">
+        <i class="i ph:house-fill text-2xl"></i>
+        <div>首页</div>
+    </div>
+    <div class="text-center leading-none">
+        <i class="i bx:bxs-compass text-2xl"></i>
+        <div>发现</div>
+    </div>
+    <div class="text-center leading-none" onclick="location.href='orderList.html'">
+        <i class="i mdi:document text-2xl"></i>
+        <div>订单</div>
+    </div>
+    <div class="text-center leading-none" onclick="location.href='login.html'">
+        <i class="i ic:sharp-person text-2xl"></i>
+        <div>我的</div>
+    </div>
+</footer>
+<script>
+    function toggleElementDisplay(divId, button) {
+        var element = document.getElementById(divId);
+        if (element.style.maxHeight) {
+            element.style.maxHeight = null;
+            button.innerText = "▼";
+        } else {
+            element.style.maxHeight = element.scrollHeight + "px";
+            button.innerText = "▲";
+        }
+    }
+</script>
+</body>
+</html>
